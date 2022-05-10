@@ -1,0 +1,28 @@
+{
+    // Also according to MDN docs these style comments are allowed
+    // Required stuff
+
+    "manifest_version": 2,
+  
+    "name": "YoutubeAutoSkip",
+
+    "version":"0.1",
+
+    // Additional stuff 
+  
+    "content_scripts": [
+      { 
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["script.js"]
+      }
+    ],
+  
+  
+    "description": "A plugin that automatically skips Youtube ads without blocking them directly, this contains two different ways of skipping 1. Finding a skip button and auto-click 2. Moving the players time to the end based on whether the player's line color is yellow indicating ads",
+  
+    "icons": {
+      "48": "icon.ico"
+    }
+
+  }
+  
